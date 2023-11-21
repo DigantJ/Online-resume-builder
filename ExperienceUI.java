@@ -33,10 +33,10 @@ public class ExperienceUI extends JFrame implements ActionListener
 		this.French=French;
 		this.Hindi=Hindi;
 
-		ImageIcon image = new ImageIcon("rb-logo.png"); //create an ImageIcon
-		this.setIconImage(image.getImage()); //change icon of frame
-		this.getContentPane().setBackground(new Color(0X6666ff)); //change color of background
-		this.setTitle("Resume builder"); //sets title of frame
+		ImageIcon image = new ImageIcon("rb-logo.png"); 
+		this.setIconImage(image.getImage()); 
+		this.getContentPane().setBackground(new Color(0X6666ff)); 
+		this.setTitle("Resume builder"); 
 
 		f = new Font("SansSerif", Font.BOLD, 30);
 		l = new JLabel("Internship Experience");
@@ -50,8 +50,8 @@ public class ExperienceUI extends JFrame implements ActionListener
 		t3 = new JTextField();
 		j1 = new JComboBox();
 		b1 = new JButton("Save");
-		b1.setForeground(Color.white); //sets font color
-		b1.setBackground(new Color(0X000075));  //sets background color
+		b1.setForeground(Color.white); 
+		b1.setBackground(new Color(0X000075)); 
 
 
 		for(int i=1;i<=12;i++)
@@ -80,12 +80,12 @@ public class ExperienceUI extends JFrame implements ActionListener
 		add(b1);
 		add(j1);
 		b1.addActionListener(this);
-		setLayout(null);    //set layout to null
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //to set the action of the cross button of the frame
+		setLayout(null);   
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
 		this.setLocationRelativeTo(null);
 		this.setSize(500,500);
-		setResizable(false);    //to disable the resizability feature of the frame
-		setVisible(true);   // to make the frame visible
+		setResizable(false);    
+		setVisible(true);   
 	}
 
 	@Override
