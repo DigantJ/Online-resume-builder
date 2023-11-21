@@ -11,10 +11,10 @@ public class ResumeUI extends JFrame implements ActionListener {
 	
 	public ResumeUI() {
 
-		ImageIcon image = new ImageIcon("rb-logo.png"); //create an ImageIcon
-		this.setIconImage(image.getImage()); //change icon of frame
-		this.getContentPane().setBackground(new Color(0X6666ff)); //change color of background
-		this.setTitle("Resume builder"); //sets title of frame
+		ImageIcon image = new ImageIcon("rb-logo.png"); 
+		this.setIconImage(image.getImage()); 
+		this.getContentPane().setBackground(new Color(0X6666ff)); 
+		this.setTitle("Resume builder"); 
 
 		f = new Font("SansSerif", Font.BOLD, 30);
 		l = new JLabel("Personal Details");
@@ -34,9 +34,8 @@ public class ResumeUI extends JFrame implements ActionListener {
 		t5 = new JTextField();
 		t6 = new JTextField();
 		b1 = new JButton("Education -->");
-		b1.setForeground(Color.white); //sets font color
-		b1.setBackground(new Color(0X000075));  //sets background color
-		//set bounds
+		b1.setForeground(Color.white);
+		b1.setBackground(new Color(0X000075));  
 		l.setBounds(150, 10, 250,50);
 		l1.setBounds(50,90,100,40);
 		l2.setBounds(50,130,100,40);
@@ -68,12 +67,12 @@ public class ResumeUI extends JFrame implements ActionListener {
 		add(t6);
 		add(b1);
 		b1.addActionListener(this);
-		setSize(500,500);   //set size of the frame
-		setLayout(null);    //set layout to null
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //to set the action of the cross button of the frame
+		setSize(500,500);  
+		setLayout(null);   
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
 		this.setLocationRelativeTo(null);
-		setResizable(false);    //to disable the resizability feature of the frame
-		setVisible(true);   // to make the frame visible
+		setResizable(false);    
+		setVisible(true);   
 	}
 
 	@Override
