@@ -57,10 +57,10 @@ public class Resume extends JFrame {
 		this.French=French;
 		this.Hindi=Hindi;
 
-		ImageIcon image = new ImageIcon("rb-logo.png"); //create an ImageIcon
-		this.setIconImage(image.getImage()); //change icon of frame
-		this.getContentPane().setBackground(new Color(0X6666ff)); //change color of background
-		this.setTitle("Resume builder"); //sets title of frame
+		ImageIcon image = new ImageIcon("rb-logo.png"); 
+		this.setIconImage(image.getImage()); 
+		this.getContentPane().setBackground(new Color(0X6666ff)); 
+		this.setTitle("Resume builder"); 
 
 
 		l1 = new JLabel(this.Name);
