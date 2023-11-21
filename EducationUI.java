@@ -20,10 +20,10 @@ public class EducationUI extends JFrame implements ActionListener
 		this.email = email;
 		this.imagePath =imagePath;
 
-		ImageIcon image = new ImageIcon("rb-logo.png"); //create an ImageIcon
-		this.setIconImage(image.getImage()); //change icon of frame
-		this.getContentPane().setBackground(new Color(0X6666ff)); //change color of background
-		this.setTitle("Resume builder"); //sets title of frame
+		ImageIcon image = new ImageIcon("rb-logo.png"); 
+		this.setIconImage(image.getImage()); 
+		this.getContentPane().setBackground(new Color(0X6666ff)); 
+		this.setTitle("Resume builder"); 
 
 
 		f = new Font("SansSerif", Font.BOLD, 30);
@@ -149,12 +149,11 @@ public class EducationUI extends JFrame implements ActionListener
 		add(b1);
 		b1.addActionListener(this);
 		setLayout(null);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //to set the action of the cross button of the frame
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
 		this.setLocationRelativeTo(null);
 		this.setSize(600,500);
-		setResizable(false);    //to disable the resizability feature of the frame
-		setVisible(true);   // to make the frame visible
-
+		setResizable(false);   
+		setVisible(true);  
 
 	}
 
